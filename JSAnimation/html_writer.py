@@ -225,6 +225,7 @@ def _included_frames(frame_fullnames):
                                   frame_list=frame_fullnames)
 
 
+
 def _embedded_frames(frame_list, frame_format):
     """frame_list should be a list of base64-encoded png files"""
     template = '  frames[{0}] = "data:image/{1};base64,{2}"\n'
