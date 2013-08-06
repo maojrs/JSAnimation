@@ -328,8 +328,8 @@ class HTMLWriter(FileMovieWriter):
         interval = int(1000. / self.fps)
 
         with open(self.outfile, 'w') as of:
-	    if (self.add_html != ''):
-	        of.write(PREV_INCLUDE.format(add_html=self.add_html))
+            if (self.add_html != ''):
+                of.write(PREV_INCLUDE.format(add_html=self.add_html))
             of.write(JS_INCLUDE)
             of.write(DISPLAY_TEMPLATE.format(id=self.new_id(),
                                              Nframes=len(self._temp_names),
