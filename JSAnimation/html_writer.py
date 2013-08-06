@@ -287,7 +287,7 @@ class HTMLWriter(FileMovieWriter):
     def set_framename(self):
       frame_fullname = self._temp_names
       for i in range(len(self._temp_names)):
-	frame_name = 'frame' + str(i).zfill(4) + "." + self.frame_format
+        frame_name = 'frame' + str(i).zfill(4) + "." + self.frame_format
         frame_fullname[i] = os.path.join(self.frame_dir, frame_name)
       return frame_fullname
 
